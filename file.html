@@ -1,0 +1,133 @@
+<html class="gr__localhost">
+   <head>
+      <title>Express</title>
+      <link rel="stylesheet" href="./stylesheets/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="./javascripts/homepage.js"></script><script type="text/javascript" src="./javascripts/layout.js"></script>
+   </head>
+   <body data-gr-c-s-loaded="true" style="background-color: rgba(0, 0, 0, 0.4);">
+      <div class="headerDiv" style="background-color:#1f4079;width:100%;height:60px;position:absolute;top:0px;left:0">
+         <img src="https://ethz.ch/etc/designs/ethz/img/header/ethz_logo_white.svg" style="margin-left:25px;margin-top:15px;"><span style="margin-left:10px;color:#ffffff">FCO-Cypto</span>
+         <div class="rightNav" style="float:right;margin-right:25px;height:75px;padding-top:15px">
+            <form class="form-group has-feedback col-md-4" style="border-radius:5px;width:200px;"><input class="col-md-8 form-control" type="text" id="search-addon" style="width:150px" placevalue="Search"><i class="glyphicon glyphicon-search form-control-feedback" style="color:#ffffff;border-left:1px"></i></form>
+            <div class="login_div" style="display:inline;margin-right:5px;"><a class="login_btn" style="margin-top:20px;color:#ffffff;marign-right:5px;font-size:23px">Login</a></div>
+         </div>
+      </div>
+      <div class="navigationModal" style="width:100%;margin-top:10px;height:41px;background-color:#000000;position:absolute;left:0px">
+         <span onclick="openNav()"><i class="fa fa-bars" style="font-size:24px;margin-left:25px;margin-right:100px;position:relative;top:-10px"></i></span>
+         <ul class="nav nav-tabs" style="display:inline-block;">
+            <li class="active" style="margin-right:150px"><a href="#">Home</a></li>
+            <li style="margin-right:150px"><a href="#" style="color:#ffffff">ANALYSIS</a></li>
+            <li style="margin-right:150px"><a href="#" style="color:#ffffff">CHARTS</a></li>
+            <li style="margin-right:150px"><a href="#" style="color:#ffffff">NEWS</a></li>
+            <li style="margin-right:150px"><a href="#" style="color:#ffffff">BLOG</a></li>
+         </ul>
+      </div>
+      <div class="sidenav" id="mySidenav" style="width: 250px;"><a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a><a href="#">Research</a><a href="#">Reports</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Know More!</a><a href="#">Contact</a></div>
+      <div class="containerDiv" style="margin:100px 50px">
+         <div class="heroContent col-md-8">
+            <div class="featuredHeadingDiv col-md-12" style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block">
+               <h3 style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium">FEATURED CONTENT</h3>
+               <ul class="slides">
+                  <input id="img-1" type="radio" name="radio-btn" checked="">
+                  <li class="slide-container">
+                     <div class="slide"><img src="https://www.simag.com/fileadmin/_processed_/c/e/csm_TED_capture_d5ff4205fa.jpg"></div>
+                     <div class="nav"><label class="prev" for="img-6">‹</label><label class="next" for="img-2">›</label></div>
+                  </li>
+                  <input id="img-2" type="radio" name="radio-btn">
+                  <li class="slide-container">
+                     <div class="slide"><img src="https://er.ethz.ch/financial-crisis-observatory/_jcr_content/image.imageformat.carousel.573615669.jpg"></div>
+                     <div class="nav"><label class="prev" for="img-1">‹</label><label class="next" for="img-3">›</label></div>
+                  </li>
+                  <input id="img-3" type="radio" name="radio-btn">
+                  <li class="slide-container">
+                     <div class="slide"><img src="https://er.ethz.ch/research/_jcr_content/image.imageformat.carousel.1362109081.png"></div>
+                     <div class="nav"><label class="prev" for="img-2">‹</label><label class="next" for="img-4">›</label></div>
+                  </li>
+                  <input id="img-4" type="radio" name="radio-btn">
+                  <li class="slide-container">
+                     <div class="slide"><img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg"></div>
+                     <div class="nav"><label class="prev" for="img-3">‹</label><label class="next" for="img-5">›</label></div>
+                  </li>
+                  <input id="img-5" type="radio" name="radio-btn">
+                  <li class="slide-container">
+                     <div class="slide"><img src="https://er.ethz.ch/real-estate-observatory/_jcr_content/image.imageformat.carousel.1036408943.jpg"></div>
+                     <div class="nav"><label class="prev" for="img-4">‹</label><label class="next" for="img-6">›</label></div>
+                  </li>
+                  <input id="img-6" type="radio" name="radio-btn">
+                  <li class="slide-container">
+                     <div class="slide"><img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg"></div>
+                     <div class="nav"><label class="prev" for="img-5">‹</label><label class="next" for="img-1">›</label></div>
+                  </li>
+                  <li class="nav-dots"><label class="nav-dot" id="img-dot-1" for="img-1"></label><label class="nav-dot" id="img-dot-2" for="img-2"></label><label class="nav-dot" id="img-dot-3" for="img-3"></label><label class="nav-dot" id="img-dot-4" for="img-4"></label><label class="nav-dot" id="img-dot-5" for="img-5"></label><label class="nav-dot" id="img-dot-6" for="img-6"></label></li>
+               </ul>
+            </div>
+         </div>
+         <div class="newsDiv col-md-4">
+            <div class="featuredHeadingDiv col-md-12" style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block">
+               <h3 style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium">NEWS</h3>
+            </div>
+            <div class="col-xs-6 col-md-12 news-card-div">
+               <div class="session-card col-xs-12 zeroPadding" style="padding:0px">
+                  <a href="#">
+                     <div class="col-md-3 imageDiv" style="padding:0px;margin:0px;width:25%"><img class="news-image" src="https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy8yODQxN2U5MjM0MTU0NmJiNjFhMDExOTQxZmY2NzBlNC5qcGc=.jpg"></div>
+                     <div class="newsHeading col-md-9"><span style="margin-left:5px">‘New Normal Bottom Price for Bitcoin Is $10K,’ Says Advisory Group CEO</span></div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-xs-6 col-md-12 news-card-div">
+               <div class="session-card col-xs-12 zeroPadding" style="padding:0px">
+                  <a href="#">
+                     <div class="col-md-3 imageDiv" style="padding:0px;margin:0px;width:25%"><img class="news-image" src="https://news.bitcoin.com/wp-content/uploads/2019/08/india-boosts-economy.png"></div>
+                     <div class="newsHeading col-md-9"><span style="margin-left:5px">Crypto Can Boost Indian Economy - How Banning Will Hurt it</span></div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-xs-6 col-md-12 news-card-div">
+               <div class="session-card col-xs-12 zeroPadding" style="padding:0px">
+                  <a href="#">
+                     <div class="col-md-3 imageDiv" style="padding:0px;margin:0px;width:25%"><img class="news-image" src="https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9jNTk5OWQyZWFmMmEzZDg1ZjIzODk1NTUwYzJhMWY4OC5qcGc=.jpg"></div>
+                     <div class="newsHeading col-md-9"><span style="margin-left:5px">Hong Kong Businesses Begin Adopting Bitcoin as a Form of Protest</span></div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-xs-6 col-md-12 news-card-div">
+               <div class="session-card col-xs-12 zeroPadding" style="padding:0px">
+                  <a href="#">
+                     <div class="col-md-3 imageDiv" style="padding:0px;margin:0px;width:25%"><img class="news-image" src="https://financialpostcom.files.wordpress.com/2019/08/bit4.jpg?w=840&amp;h=630&amp;crop=1&amp;quality=80&amp;strip=all"></div>
+                     <div class="newsHeading col-md-9"><span style="margin-left:5px">Bitcoin is surging. Could smaller rivals be due for rallies, too?</span></div>
+                  </a>
+               </div>
+            </div>
+            <div class="col-xs-6 col-md-12 news-card-div">
+               <div class="session-card col-xs-12 zeroPadding" style="padding:0px">
+                  <a href="#">
+                     <div class="col-md-3 imageDiv" style="padding:0px;margin:0px;width:25%"><img class="news-image" src="https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9hODI3MmY1N2NlMTNiMjQ1Yzk4NGE5ZWYwMmY0MDRhNy5qcGc=.jpg"></div>
+                     <div class="newsHeading col-md-9"><span style="margin-left:5px">3 Key Indicators Suggest Bitcoin Price Is Ready for a Massive Move</span></div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="welcomeContent col-md-12">
+            <div class="featuredHeadingDiv col-md-12" style="border-bottom:1px solid #bebebe ;margin-bottom:2px;padding-left:0px;display:inline-block">
+               <h3 style="border-bottom:1.5px solid #131a71;margin-bottom:0px;width:40%;color:#053077;font-family:RobotoMedium">WELCOME</h3>
+               <div class="contentSubContainer contains-textimage"></div>
+               <div>
+                  <div class="basecomponent textimage">
+                     <div>
+                        <div class="textimage">
+                           <p>We are located within the&nbsp;<a href="http://www.mtec.ethz.ch/" iconoption="AUTO">Department of Management, Technology, and Economics<span class="icon"></span></a></p>
+                           <p><i>"Risk is life, life is risk. Only death corresponds to sustainable equilibrium.&nbsp;<br> Any interesting out-of-equilbrium system (biological, ecological, societal, economic and so on) is prone to downside as well as upside risks, the non-certain outcomes that give rises to disruptions as well as opportunities."</i><br>D. Sornette, March 2012<br></p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="par basecomponent onlynewparsys">
+                     <div class="new"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

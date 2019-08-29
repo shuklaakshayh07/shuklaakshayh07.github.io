@@ -1,0 +1,7 @@
+document.onreadystatechange = function () {
+   if (document.readyState == "complete") {
+   var foo = document.getElementByClass("news-image");
+
+   foo.onclick = function () {alert("bar");}
+ }
+}
